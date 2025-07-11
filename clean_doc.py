@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Очистка DOCX-документов от mojibake и управляющих символов
 с одновременным формированием отчёта об изменениях.
@@ -21,9 +20,9 @@ import unicodedata
 from pathlib import Path
 from typing import Iterable, Tuple
 
-from docx import Document          # python-docx
-from ftfy import fix_text          # «fixes text for you»
-from tqdm import tqdm              # прогресс-бар
+from docx import Document
+from ftfy import fix_text
+from tqdm import tqdm
 
 # --------------------------------------------------------------------------- #
 CONTROL_CATEGORIES = {"Cf", "Cc"}
